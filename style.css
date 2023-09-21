@@ -139,7 +139,7 @@ a:hover {
 }
 
 .hamburger-icon span:first-child {
-  opacity: 1;
+  opacity: 1;.details-container
 }
 
 .hamburger-icon span:first-child {
@@ -305,7 +305,6 @@ section {
 
 .section-container {
   gap: 4rem;
-  height: 80%;
 }
 
 .section__pic-container {
@@ -316,18 +315,18 @@ section {
 
 /* EXPERIENCE SECTION */
 
-#experience {
+#skills {
   position: relative;
 }
 
-.experience-sub-title {
+.skill-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
-.experience-details-container {
+.skill-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
