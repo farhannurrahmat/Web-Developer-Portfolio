@@ -45,9 +45,9 @@
   .section-container {
     height: fit-content;
   }
-  /* section {
+  section {
     margin: 0 5%;
-  } */
+  }
   .section__pic-container {
     width: 275px;
     height: 275px;
@@ -57,8 +57,8 @@
     margin-top: 0;
   }
   #profile {
-    height: auto;
-    margin-bottom: auto;
+    height: 83vh;
+    margin-bottom: 6rem;
   }
   .about-containers {
     flex-wrap: wrap;
@@ -84,7 +84,8 @@
     margin: 0 10%;
   }
   #profile {
-    height: 60vh;
+    height: auto;
+    margin-bottom: auto;
   }
 }
 
@@ -94,8 +95,8 @@
     height: 40vh;
   }
   #profile {
-    height: 60vh;
-    /* margin-bottom: 50px; */
+    height: auto;
+    margin-bottom: auto;
   }
   article {
     font-size: 1rem;

@@ -151,7 +151,7 @@ a:hover {
 section {
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 10rem;
+  margin:  2.5rem 10rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -240,7 +240,7 @@ section {
 }
 
 .btn-color-1,
-.btn-color-2:hover {.title
+.btn-color-2:hover {
   background: rgb(53, 53, 53);
   color: white;
 }
