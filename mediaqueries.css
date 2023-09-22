@@ -42,8 +42,8 @@
     margin-top: 0;
   }
   #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
+    height: auto;
+    margin-bottom: auto;
   }
   .about-containers {
     flex-wrap: wrap;
