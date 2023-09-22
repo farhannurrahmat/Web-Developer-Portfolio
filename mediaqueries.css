@@ -83,6 +83,9 @@
   section {
     margin: 0 10%;
   }
+  #profile {
+    height: 60vh;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -91,8 +94,8 @@
     height: 40vh;
   }
   #profile {
-    height: 83vh;
-    margin-bottom: 50px;
+    height: 60vh;
+    /* margin-bottom: 50px; */
   }
   article {
     font-size: 1rem;
