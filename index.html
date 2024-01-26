@@ -1,351 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farhannr-Web</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
-</head>
-
-<body>
-  <nav id="desktop-nav">
-    <div class="logo">Farhan Nurrahmat
-      <!-- <img src="./assets/logo.png" alt=""> -->
-    </div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#desktop-nav">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experiences">Experiences</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Web Developer</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        Farhan Nurrahmat
+        <!-- <img src="./assets/logo.png" alt=""> -->
       </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-        <li><a href="#experiences" onclick="toggleMenu()">Experiences</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-    </div>
-  </nav>
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/Farhan.png" alt="Farhan profile picture" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Farhan Nurrahmat</h1>
-      <p class="section__text__p2">Web Developer</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/CV Formal V.4.pdf')">
-          View My CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Web Developer</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experiences" onclick="toggleMenu()">Experiences</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
       </div>
-      <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-          onclick="location.href='https://www.linkedin.com/in/muhammad-farhan-nurrahmat-latif-a6347028a/'" />
-        <img src="./assets/github.png" alt="My Github profile" class="icon"
-          onclick="location.href='https://github.com/farhannurrahmat'" />
-        <!-- <img src="./assets/instagram.png" alt="My Instagram profile" class="icon"
-          onclick="location.href='https://www.instagram.com/farhan_nr.7/'" /> -->
-      </div>
-      
-    </div>
-  </section>
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
+    </nav>
+    <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/about.png" alt="Profile picture" class="about-pic" />
+        <img src="./assets/Farhan.png" alt="Farhan profile picture" />
       </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/learn-experience.png" alt="Experience icon" class="icon" />
-            <h3>Learning Experience</h3>
-            <p>2+ years <br />Learning about Web Development</p>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Farhan Nurrahmat</h1>
+        <p class="section__text__p2">Web Developer Enthusiast</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV.pdf')"
+          >
+            View My CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/farhannurrahmat/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/farhannurrahmat'"
+          />
+        </div>
+      </div>
+      <div></div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/learn-experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Learning Experience</h3>
+              <p>
+                2+ years <br />Learning about Web & App Development: Frontend &
+                Backend Development
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                SMK TI Bazma<br />Majoring in Network and Application
+                Information Systems
+              </p>
+            </div>
           </div>
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon" />
-            <h3>Education</h3>
-            <p>SMK TI Bazma<br>Majoring in network and application
-              information systems
+          <div class="text-container">
+            <p>
+              I am a vocational student majoring in SIJA (Network Information
+              Systems and Applications). During my educational journey, I
+              discovered a deep interest in web development, crypto markets, and
+              entrepreneurship. I also enjoy exploring things, enhancing my
+              horizons, and adopting critical thinking and a growth mindset. I
+              believe the knowledge and experience I have gained will help me
+              become a web developer capable of creating innovative and
+              impactful works in this field.
+              <!-- I am a vocational school student majoring in Systems, Networks,
+              and Applications. I have learned a lot about Information
+              Technology, including computer hardware, graphic design, and web
+              development. I am interested in becoming a web developer and
+              believe that with my knowledge and experience, I can create
+              innovative works. -->
             </p>
           </div>
         </div>
-        <div class="text-container">
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skill-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skill-sub-title">Web Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Laravel</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Wordpress</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skill-sub-title">Other Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe Ilustrator</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe Photoshop</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Ms. Office</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experiences'"
+      />
+    </section>
+
+    <section id="experiences">
+      <p class="section__text__p1">Explore My Experiences</p>
+      <h1 class="title">Experiences</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="article-container">
+              <div class="card">
+                <p class="card-title">Portfolio Website</p>
+                <h3 class="date">28 Aug - 3 Sep 2023</h3>
+                <p class="small-desc">
+                  Create a Responsif Portfolio Website
+                  <br /><span>Use HTML, CSS, Javascript</span>
+                </p>
+                <div class="go-corner">
+                  <div class="go-arrow">→</div>
+                </div>
+              </div>
+
+              <div class="card">
+                <p class="card-title">PPDB Digital App</p>
+                <h3 class="date">1 - 20 June 2023</h3>
+                <p class="small-desc">
+                  Create a Digital PPDB application with 2 roles: admin and
+                  user, using CRUD systems
+                  <br /><span>Use HTML, CSS, Javascript</span>
+                </p>
+                <div class="go-corner">
+                  <div class="go-arrow">→</div>
+                </div>
+              </div>
+
+              <div class="card">
+                <p class="card-title">School Website</p>
+                <h3 class="date">20 - 26 March 2023</h3>
+                <p class="small-desc">
+                  Create a responsive design School website
+                  <br /><span>Use HTML, CSS, Javascript</span>
+                </p>
+                <div class="go-corner">
+                  <div class="go-arrow">→</div>
+                </div>
+              </div>
+
+              <div class="card">
+                <p class="card-title">E-commerce Website</p>
+                <h3 class="date">6 - 12 March 2023</h3>
+                <p class="small-desc">
+                  Create a Responsive Ecommerce Website Demo
+                  <br /><span>Use HTML, CSS, Javascript</span>
+                </p>
+                <div class="go-corner">
+                  <div class="go-arrow">→</div>
+                </div>
+              </div>
+
+              <div class="card">
+                <p class="card-title">World Cup Website</p>
+                <h3 class="date">6 - 12 February 2023</h3>
+                <p class="small-desc">
+                  Create a World Cup Event Responsive Website
+                  <br /><span>Use HTML, CSS, Javascript</span>
+                </p>
+                <div class="go-corner">
+                  <div class="go-arrow">→</div>
+                </div>
+              </div>
+
+              <div class="card">
+                <p class="card-title">Crowd Funding Website</p>
+                <h3 class="date">9 - 15 Jan 2023</h3>
+                <p class="small-desc">
+                  Create a Crowd Funding responsive website
+                  <br /><span>Use HTML, CSS, Javascript</span>
+                </p>
+                <div class="go-corner">
+                  <div class="go-arrow">→</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projek1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">E-commerce</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/farhannurrahmat/Ecommerce'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://farhannurrahmat.github.io/Ecommerce/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projek2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">School</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/farhannurrahmat/Landing-Page-School'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://farhannurrahmat.github.io/Landing-Page-School/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projek3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Nike Brand Landing Page
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/farhannurrahmat/nike'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://fnike.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:farhannr75@gmail.com">farhannr75@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
           <p>
-            I am a vocational school student majoring in Systems, Networks, and Applications. I have learned a lot about
-            Information Technology, including computer hardware, graphic design, and web development. I am interested in
-            becoming a web developer and believe that with my knowledge and experience, I can create innovative works.
+            <a
+              href="//www.linkedin.com/in/muhammad-farhan-nurrahmat-latif-a6347028a/"
+              >LinkedIn</a
+            >
           </p>
         </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
-  </section>
-  <section id="skills">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Skills</h1>
-    <div class="skill-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="skill-sub-title">Web Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-              <div>
-                <h3>HTML</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-              <div>
-                <h3>CSS</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-              <div>
-                <h3>Laravel</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-              <div>
-                <h3>JavaScript</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-              <div>
-                <h3>Bootstrap</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-              <div>
-                <h3>Wordpress</h3>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="skill-sub-title">Other Skills</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-              <div>
-                <h3>Adobe Ilustrator</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-              <div>
-                <h3>Adobe Photoshop</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-              <div>
-                <h3>Figma</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-              <div>
-                <h3>Ms. Office</h3>
-              </div>
-            </article>
-          </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/instagram.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon instagram-icon"
+          />
+          <p><a href="//www.instagram.com/farhan_nr.7/">Instagram</a></p>
         </div>
       </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experiences'" />
-  </section>
-
-  <section id="experiences">
-    <p class="section__text__p1">View My Project Experiences</p>
-    <h1 class="title">Project Experiences</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <div class="article-container">
-
-            <div class="card">
-              <p class="card-title">Portfolio Website</p>
-              <h3 class="date">28 Aug - 3 Sep 2023</h3>
-              <p class="small-desc">
-                Create a Responsif Portfolio Website
-                <br><span>Use HTML, CSS, Javascript</span>
-              </p>
-              <div class="go-corner">
-                <div class="go-arrow">→</div>
-              </div>
-            </div>
-
-            <div class="card">
-              <p class="card-title">PPDB Digital App</p>
-              <h3 class="date"> 1 - 20 June 2023</h3>
-              <p class="small-desc">
-                Create a Digital PPDB application
-                with 2 roles: admin and user, using CRUD systems
-
-                <br><span>Use HTML, CSS, Javascript</span>
-              </p>
-              <div class="go-corner">
-                <div class="go-arrow">→</div>
-              </div>
-            </div>
-
-            <div class="card">
-              <p class="card-title">School Website</p>
-              <h3 class="date">20 - 26 March 2023</h3>
-              <p class="small-desc">
-                Create a responsive design School website
-                <br><span>Use HTML, CSS, Javascript</span>
-              </p>
-              <div class="go-corner">
-                <div class="go-arrow">→</div>
-              </div>
-            </div>
-
-            <div class="card">
-              <p class="card-title">E-commerce Website</p>
-              <h3 class="date"> 6 - 12 March 2023</h3>
-              <p class="small-desc">
-                Create a responsive Ecommerce website demo
-
-                <br><span>Use HTML, CSS, Javascript</span>
-              </p>
-              <div class="go-corner">
-                <div class="go-arrow">→</div>
-              </div>
-            </div>
-
-            <div class="card">
-              <p class="card-title">World Cup Website</p>
-              <h3 class="date">6 - 12 February 2023</h3>
-              <p class="small-desc">
-                Create a World Cup event responsive website
-
-
-                <br><span>Use HTML, CSS, Javascript</span>
-              </p>
-              <div class="go-corner">
-                <div class="go-arrow">→</div>
-              </div>
-            </div>
-
-            <div class="card">
-              <p class="card-title">Crowd Funding Website</p>
-              <h3 class="date">9 - 15 Jan 2023</h3>
-              <p class="small-desc">
-                Create a Crowd Funding responsive website
-                <br><span>Use HTML, CSS, Javascript</span>
-              </p>
-              <div class="go-corner">
-                <div class="go-arrow">→</div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-  </section>
-
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/projek1.png" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">E-commerce</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/farhannurrahmat/Ecommerce'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://farhannurrahmat.github.io/Ecommerce/'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/projek2.png" alt="Project 2" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">School</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/farhannurrahmat/Landing-Page-School'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://farhannurrahmat.github.io/Landing-Page-School/'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/projek3.png" alt="Project 3" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Business Portfolio</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/farhannurrahmat/Business-Portofolio'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://farhannurrahmat.github.io/Business-Portofolio/'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:farhannr75@gmail.com">farhannr75@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="//www.linkedin.com/in/muhammad-farhan-nurrahmat-latif-a6347028a/">LinkedIn</a></p>
-      </div>
-    </div>
-    <div class="main">
+      <!-- <div class="main">
       <div class="up">
         <button class="card1">
           <svg class="instagram" onclick="location.href='https://www.instagram.com/farhan_nr.7/'" fill-rule="nonzero" height="30px" width="30px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero"><g transform="scale(8,8)"><path d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z"></path></g></g></svg>
@@ -368,24 +504,23 @@
           </svg>
         </button>
       </div>
-    </div>
-  </section>
-  <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#desktop-nav">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experiences">Experiences</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <p>Copyright &#169; 2023 Farhan. Made with Effort.</p>
-  </footer>
-  <script src="script.js"></script>
-</body>
-
+    </div> -->
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#desktop-nav">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Farhan. Made with Effort.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
